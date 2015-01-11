@@ -18,7 +18,7 @@ plot4 <- function() {
   data$DateTime<-strptime(data$DateTime, "%d/%m/%Y %H:%M:%S")
   
   ###Opens appropriate png file and plots to the png file, then closes the png file
-  png(file = "plot4.png", bg = "transparent",width=480, height=480)
+  png(file = "plot4.png", bg = "white",width=480, height=480)
   par(mfcol = c(2, 2))
   with(data, {
     plot(data$DateTime,data$Global_active_power,type="l",xlab="",ylab="Global Active Power")

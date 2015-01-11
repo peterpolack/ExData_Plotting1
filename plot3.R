@@ -18,7 +18,7 @@ plot3 <- function() {
   data$DateTime<-strptime(data$DateTime, "%d/%m/%Y %H:%M:%S")
   
   ###Opens appropriate png file and plots to the png file, then closes the png file
-  png(file = "plot3.png", bg = "transparent",width=480, height=480)
+  png(file = "plot3.png", bg = "white",width=480, height=480)
   plot(data$DateTime,data$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering")
   lines(data$DateTime,data$Sub_metering_2,col="red")
   lines(data$DateTime, data$Sub_metering_3,col="blue")
