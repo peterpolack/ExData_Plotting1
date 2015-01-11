@@ -14,7 +14,7 @@ plot1 <- function() {
   data$Sub_metering_3<-as.numeric(as.character(data$Sub_metering_3))
   
   ###Opens appropriate png file and plots to the png file, then closes the png file
-  png(file = "plot1.png", bg = "transparent",width=480, height=480)
+  png(file = "plot1.png", bg = "white",width=480, height=480)
   hist(data$Global_active_power,main="Global Active Power", col="red", xlab="Global Active Power (kilowatts)")
   dev.off()
 }
